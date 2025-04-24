@@ -83,9 +83,6 @@
               <goal>xjc</goal>
             </goals>
             <configuration>
-              <sources>
-                <source>src/main/resources/Employee.xsd</source>
-              </sources>
               <packageName>de.claudioaltamura.jaxb2</packageName>
               <outputDirectory>${project.basedir}/src/main/java</outputDirectory>
               <clearOutputDir>false</clearOutputDir>
