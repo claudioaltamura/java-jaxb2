@@ -5,10 +5,8 @@
 # java-jaxb2
 Java JAXB2 examples
 
-## Solution 1
-
-The generated sources are located in the `target/generated-sources/xjc` directory.
-
+## Solution 2
+The generated sources are located in the src/main directory. This maybe useful if you want to keep the generated sources in the same directory as your source code.
 To generate the sources, execute the following command:
 
 ```
