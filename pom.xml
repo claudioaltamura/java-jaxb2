@@ -73,26 +73,23 @@
     </pluginManagement>
     <plugins>
       <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>jaxb2-maven-plugin</artifactId>
-        <version>3.1.0</version>
+        <groupId>org.jvnet.jaxb</groupId>
+        <artifactId>jaxb-maven-plugin</artifactId>
+        <version>4.0.0</version>
         <executions>
           <execution>
-            <id>xjc</id>
             <goals>
-              <goal>xjc</goal>
+              <goal>generate</goal>
             </goals>
-            <configuration>
-              <xjbSources>
-                <xjbSource>src/main/resources/Order-Bindings.xjb</xjbSource>
-              </xjbSources>
-              <sources>
-                <source>src/main/resources/Order.xsd</source>
-              </sources>
-              <packageName>de.claudioaltamura.java.jaxb2</packageName>
-            </configuration>
           </execution>
         </executions>
+        <configuration>
+          <episode>false</episode>
+          <schemaDirectory>${project.basedir}/src/main/resources/</schemaDirectory>
+          <schemaIncludes>**/*.xsd</schemaIncludes>
+          <generateDirectory>${project.basedir}/src/main/java</generateDirectory>
+          <generatePackage>de.claudioaltamura.java.jaxb2</generatePackage>
+        </configuration>
       </plugin>
     </plugins>
   </build>

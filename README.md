@@ -5,15 +5,9 @@
 # java-jaxb2
 Java JAXB2 examples
 
-## Solution 1
-
-The generated sources are located in the `target/generated-sources/xjc` directory.
-This is the default location for generated sources when using Maven with JAXB2.
-
-## Solution 2
-
+## Solution 3
+This solution uses the `jaxb2-maven-plugin` to generate Java classes from XML schema files (XSD).
 The generated sources are located in the `src/main` directory.
-This maybe useful if you want to keep the generated sources in the same directory as your source code.
 
 # Generate sources
 To generate the sources, execute the following command:
